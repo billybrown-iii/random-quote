@@ -95,6 +95,16 @@
    }
  }
 
+ @media (min-width: 2100px) {
+   #text {
+     font-size: 1.8em;
+   }
+
+   #author {
+     font-size: 1.5em;
+   }
+ }
+
  #credit-div {
   position: fixed;
   bottom: 5px;
