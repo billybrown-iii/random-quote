@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.c1 {
+  background-color: rgb(64,57,150);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.c2 {
+  background-color: rgb(114,229,239);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
 }
+
+.c3 {
+  background-color: rgb(11,82,46);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+.c4 {
+  background-color: rgb(55,210,117);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+.c5 {
+  background-color: rgb(125,142,206);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+.c6 {
+  background-color: rgb(113,12,158);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+.c7 {
+  background-color: rgb(188,116,216);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+.c8 {
+  background-color: rgb(8,87,130);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+.c9 {
+  background-color: rgb(202,211,250);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+.c10 {
+  background-color:rgb(46,156,188);
+  transition-duration: 0.9s;
+  transition-timing-function: ease;
+}
+
+#quote-box {
+  width: 50%;
+  margin: auto;
+  margin-top: 25vh;
+  padding: 5%;
+  padding-bottom: 7vh;
+  background-color: #fffafa;
+  min-height: 13vh;
+}
+
+@media (max-width: 767.98px) { 
+  #quote-box {
+    width: 63%;
+    padding: 6%;
+    padding-bottom: 8vh;
+    margin-top: 28vh;
+  }
+ }
+
+
+ #credit-div {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+ }
+
+ #credit-text {
+   color: white;
+   text-align: right;
+   font-size: 0.83em;
+ }
+
+.in {
+  opacity: 1;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.out {
+  opacity: 0;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in;
+}
+
+
+#the-quote {
+  min-height: 13vh;
+}
+
+#text {
+  font-size: 1.1em;
+}
+
+#author {
+  font-size: 0.95em;
+  text-align: right;
+  margin-right: 15%;
+  margin-top: 1em;
+}
+
+
+
+#tweet {
+  float: left;
+}
+
+#refresh {
+  float: right;
+}
+
+
+
