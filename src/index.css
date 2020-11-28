@@ -78,6 +78,22 @@
   }
  }
 
+ @media (min-width: 1281px) {
+   #quote-box {
+     width: 37%;
+     margin-top: 22vh;
+     padding-top: 4%;
+     padding-bottom: 8vh;
+   }
+
+   #text {
+     font-size: 1.3em;
+   }
+
+   #author {
+     font-size: 1.05em;
+   }
+ }
 
  #credit-div {
   position: fixed;
@@ -114,10 +130,12 @@
 
 #author {
   font-size: 0.95em;
-  text-align: right;
-  margin-right: 15%;
-  margin-top: 1em;
+  text-align: left;
+  margin-left: 55%;
+  margin-top: 1.5em;
 }
+
+
 
 
 
