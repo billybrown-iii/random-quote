@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import QuoteContainer from './QuoteContainer';
-import Button from '@material-ui/core/Button';
 
 function App() {
   return (<div id="conty">

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import ReplayIcon from '@material-ui/icons/Replay';
 import TwitterIcon from '@material-ui/icons/Twitter';
