@@ -86,16 +86,16 @@ class QuoteContainer extends Component {
                             id="tweet">
                             <TwitterIcon />
                         </IconButton>
-                    <div id="new-quote">
-                    <IconButton 
-                        color="primary" 
-                        aria-label="New quote"
-                        onClick={this.updateCurrentQuote}
-                        id="refresh">
-                        <ReplayIcon />
-                    </IconButton>
+                        <div id="new-quote">
+                            <IconButton 
+                                color="primary" 
+                                aria-label="New quote"
+                                onClick={this.updateCurrentQuote}
+                                id="refresh">
+                                <ReplayIcon />
+                            </IconButton>
+                        </div>
                     </div>
-                </div>
             </div>
             </div>
         )

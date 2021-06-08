@@ -63,47 +63,12 @@
   width: 50%;
   margin: auto;
   margin-top: 25vh;
-  padding: 5%;
-  padding-bottom: 7vh;
+  padding: 5.5%;
   background-color: #fffafa;
   min-height: 13vh;
 }
 
-@media (max-width: 767.98px) { 
-  #quote-box {
-    width: 63%;
-    padding: 6%;
-    padding-bottom: 8vh;
-    margin-top: 28vh;
-  }
- }
 
- @media (min-width: 1281px) {
-   #quote-box {
-     width: 37%;
-     margin-top: 22vh;
-     padding-top: 4%;
-     padding-bottom: 8vh;
-   }
-
-   #text {
-     font-size: 1.3em;
-   }
-
-   #author {
-     font-size: 1.05em;
-   }
- }
-
- @media (min-width: 2100px) {
-   #text {
-     font-size: 1.8em;
-   }
-
-   #author {
-     font-size: 1.5em;
-   }
- }
 
  #credit-div {
   position: fixed;
@@ -132,6 +97,7 @@
 
 #the-quote {
   min-height: 13vh;
+  text-align: center;
 }
 
 #text {
@@ -151,11 +117,53 @@
 
 #tweet {
   float: left;
+  /* margin-top: -7px; */
 }
 
 #refresh {
   float: right;
+  /* margin-top: -7px; */
 }
 
 
+@media (max-width: 767.98px) { 
+  #quote-box {
+    width: 63%;
+    padding: 8%;
+    margin-top: 28vh;
+  }
+ }
 
+ @media (min-width: 1200px) {
+   #quote-box {
+     width: 37%;
+     margin-top: 22vh;
+     padding: 4%;
+     padding-top: 4%;
+   }
+
+   #text {
+     font-size: 1.3em;
+   }
+
+   #author {
+     font-size: 1.05em;
+   }
+ }
+
+ @media (min-width: 2000px) {
+   #text {
+     font-size: 1.8em;
+   }
+
+   #author {
+     font-size: 1.5em;
+   }
+ }
+
+
+ @media (min-height: 800px){
+   #the-quote {
+     min-height: 5vh;
+   }
+ }
