@@ -1,60 +1,60 @@
 
 .c1 {
-  background-color: rgb(64,57,150);
+  background-color: #DE8AB4;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c2 {
-  background-color: rgb(114,229,239);
+  background-color: #7ADB86;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c3 {
-  background-color: rgb(11,82,46);
+  background-color: #6184DB;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c4 {
-  background-color: rgb(55,210,117);
+  background-color: #F5405F;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c5 {
-  background-color: rgb(125,142,206);
+  background-color: #5ACDE8;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c6 {
-  background-color: rgb(113,12,158);
+  background-color: #EBB6F5;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c7 {
-  background-color: rgb(188,116,216);
+  background-color: #97DEBD;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c8 {
-  background-color: rgb(8,87,130);
+  background-color: #AAFAF9;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c9 {
-  background-color: rgb(202,211,250);
+  background-color: #E82797;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
 
 .c10 {
-  background-color:rgb(46,156,188);
+  background-color:#F2825A;
   transition-duration: 0.9s;
   transition-timing-function: ease;
 }
@@ -131,6 +131,12 @@
     width: 63%;
     padding: 8%;
     margin-top: 28vh;
+  }
+  #tweet {
+    margin-top: -15px;
+  }
+  #refresh {
+    margin-top: -15px;
   }
  }
 
