@@ -19,8 +19,6 @@ class QuoteContainer extends Component {
     updateCurrentQuote = () => {
         const url = 'https://favqs.com/api/qotd';
 
-        
-        
         fetch(url)
             .then(this.setState({fade: 'out'}))
             .then(response => response.json())
@@ -57,33 +55,27 @@ class QuoteContainer extends Component {
                     <div 
                         id="text"
                         dangerouslySetInnerHTML={{__html: item.quote.body}}>
-                        {/* {item.quote.body} */}
                     </div>
                     <div id="author">
                         - {item.quote.author}
                     </div>
                 </div>
-                // <ul>
-                //     <li>{item.quote.author}</li>
-                //     <li>{item.quote.body}</li>
-                // </ul>
             )
         })
         return (
             <div id="container">
-
-
-            <div id="quote-box">
-                <div>
-                    {result}
-                </div>
+                <div id="quote-box">
+                    <div>
+                        {result}
+                    </div>
                     <div id="link-container">
                         <IconButton 
                             color="primary" 
                             aria-label="Tweet quote"
                             href={this.state.url}
                             target="_blank"
-                            id="tweet">
+                            id="tweet"
+                        >
                             <TwitterIcon />
                         </IconButton>
                         <div id="new-quote">
@@ -91,12 +83,13 @@ class QuoteContainer extends Component {
                                 color="primary" 
                                 aria-label="New quote"
                                 onClick={this.updateCurrentQuote}
-                                id="refresh">
+                                id="refresh"
+                            >
                                 <ReplayIcon />
                             </IconButton>
                         </div>
                     </div>
-            </div>
+                </div>
             </div>
         )
     }

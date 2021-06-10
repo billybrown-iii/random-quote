@@ -68,8 +68,6 @@
   min-height: 13vh;
 }
 
-
-
  #credit-div {
   position: fixed;
   bottom: 5px;
@@ -94,7 +92,6 @@
   transition-timing-function: ease-in;
 }
 
-
 #the-quote {
   min-height: 13vh;
   text-align: center;
@@ -111,20 +108,13 @@
   margin-top: 1.5em;
 }
 
-
-
-
-
 #tweet {
   float: left;
-  /* margin-top: -7px; */
 }
 
 #refresh {
   float: right;
-  /* margin-top: -7px; */
 }
-
 
 @media (max-width: 767.98px) { 
   #quote-box {
@@ -166,7 +156,6 @@
      font-size: 1.5em;
    }
  }
-
 
  @media (min-height: 800px){
    #the-quote {
