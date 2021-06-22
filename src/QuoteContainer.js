@@ -64,11 +64,16 @@ class QuoteContainer extends Component {
         })
         return (
             <div id="container">
+
                 <div id="quote-box">
                     <div>
                         {result}
                     </div>
-                    <div id="link-container">
+                </div>
+
+                <div id="link-container">
+
+                    <div class="btn">
                         <IconButton 
                             color="primary" 
                             aria-label="Tweet quote"
@@ -78,17 +83,19 @@ class QuoteContainer extends Component {
                         >
                             <TwitterIcon />
                         </IconButton>
-                        <div id="new-quote">
-                            <IconButton 
-                                color="primary" 
-                                aria-label="New quote"
-                                onClick={this.updateCurrentQuote}
-                                id="refresh"
-                            >
-                                <ReplayIcon />
-                            </IconButton>
-                        </div>
                     </div>
+
+                    <div class="btn">
+                        <IconButton 
+                            color="primary" 
+                            aria-label="New quote"
+                            onClick={this.updateCurrentQuote}
+                            id="refresh"
+                        >
+                            <ReplayIcon />
+                        </IconButton>  
+                    </div>
+                    
                 </div>
             </div>
         )
