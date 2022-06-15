@@ -17,13 +17,14 @@ class QuoteContainer extends Component {
     }
 
     updateCurrentQuote = () => {
-        const url = 'https://favqs.com/api/qotd';
+        const url = 'https://api.quotable.io/random';
 
         fetch(url)
+            // @ts-ignore
             .then(this.setState({fade: 'out'}))
             .then(response => response.json())
             .then(data => {
-                console.log(data.quote.body);
+                // console.log(data.body);
                 document.body.className = '';
                 this.setState(function(state, props){
                     let newNum = Math.floor(Math.random() * 10 + 1);
@@ -36,9 +37,9 @@ class QuoteContainer extends Component {
                 setTimeout(() => {this.setState({
                 data: [data],
                 url: 'https://www.twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="' 
-                + data.quote.body
+                + data.content
                 + '" - '
-                + data.quote.author,
+                + data.author,
                 fade: 'in'})}, 400)})
     }
 
@@ -54,10 +55,10 @@ class QuoteContainer extends Component {
                 <div id="the-quote" className={this.state.fade}>
                     <div 
                         id="text"
-                        dangerouslySetInnerHTML={{__html: item.quote.body}}>
+                        dangerouslySetInnerHTML={{__html: item.content}}>
                     </div>
                     <div id="author">
-                        - {item.quote.author}
+                        - {item.author}
                     </div>
                 </div>
             )
@@ -73,7 +74,7 @@ class QuoteContainer extends Component {
 
                 <div id="link-container">
 
-                    <div class="btn">
+                    <div className="btn">
                         <IconButton 
                             color="primary" 
                             aria-label="Tweet quote"
@@ -85,7 +86,7 @@ class QuoteContainer extends Component {
                         </IconButton>
                     </div>
 
-                    <div class="btn">
+                    <div className="btn">
                         <IconButton 
                             color="primary" 
                             aria-label="New quote"
